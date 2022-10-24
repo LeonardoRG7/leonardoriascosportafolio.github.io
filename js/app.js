@@ -52,7 +52,6 @@ $(".grid").isotope({
 
 window.addEventListener("scroll", () => {
   skillsEffect();
-  countUp();
 });
 
 function checkScroll(el) {
@@ -65,4 +64,3 @@ function skillsEffect() {
   if (!checkScroll(skills_wrap)) return;
   skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
 }
-
