@@ -33,17 +33,6 @@ hamburger_menu.addEventListener("click", () => {
 
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
-/*filter_btns.forEach((btn) =>
-  btn.addEventListener("click", () => {
-    filter_btns.forEach((button) => button.classList.remove("active"));
-    btn.classList.add("active");
-
-    let filterValue = btn.dataset.filter;
-
-    $(".grid").isotope({ filter: filterValue });
-  })
-); */
-
 $(".grid").isotope({
   itemSelector: ".grid-item",
   layoutMode: "fitRows",
