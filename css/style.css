@@ -913,6 +913,11 @@ h4 {
     padding-bottom: 0.65rem;
   }
 
+  .card .btn,
+  .presentation .btn{
+    margin-top: 1rem;
+  }
+
   .title:before {
     margin-bottom: 0.2rem;
     font-size: 0.8rem;
@@ -1442,7 +1447,7 @@ h4 {
   }
 
   .footer-copy {
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
 }
 
