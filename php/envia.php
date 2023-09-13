@@ -8,3 +8,4 @@ $mensaje = $_POST["mensaje"];
 $contenido = "Nombre: ". $nombre . "\n\nApellidos: " . $apellidos . "\n\nTelefono: " . $telefono . "\n\nCorreo: " . $correo . "\n\nMensaje: " . $mensaje;
 mail($destino, "Contacto", $contenido)
 echo"<script>alert('Correo enviado exitosamente, pronto Leonardo se contactará contigo')</script>";
+?>
