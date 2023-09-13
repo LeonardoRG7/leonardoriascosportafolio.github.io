@@ -8,6 +8,7 @@
   --light-two: #f9fafb;
   --light-three: #f6f7fb;
 }
+
 /*  ==================== OTHERS ============================  */
 
 *,
@@ -35,7 +36,7 @@ html {
 }
 
 
-body{
+body {
   background-color: var(--light-two);
 }
 
@@ -296,6 +297,7 @@ nav.open .links {
   transition: 0.3s;
   border: none;
   cursor: pointer;
+  margin-top: 3rem;
 }
 
 .btn:hover {
@@ -599,12 +601,14 @@ nav.open .links {
   margin-top: 1rem;
 }
 
-.skills {
-  margin: 1.5rem 0 2.5rem 0;
+svg {
+  width: 4rem;
+  padding: 0 .4rem;
 }
 
-.skill {
+h4 {
   margin: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .skill-title {
@@ -613,24 +617,6 @@ nav.open .links {
   margin-bottom: 0.3rem;
 }
 
-.skill-bar {
-  width: 70%;
-  height: 8px;
-  border-radius: 4px;
-  background-color: #ece6fa;
-  position: relative;
-  overflow: hidden;
-}
-
-.skill-progress {
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-  transition: 1s;
-}
 
 .about .column-1 {
   position: relative;
@@ -702,6 +688,7 @@ nav.open .links {
   display: flex;
   align-items: center;
 }
+
 .info-text {
   font-size: 1.3rem;
   display: inline-block;
@@ -961,9 +948,20 @@ nav.open .links {
     font-size: 1.2rem;
   }
 
+  h4 {
+    font-size: 1rem;
+  }
+
+  svg {
+    width: 3rem;
+  }
+
   .btn {
     padding: 0.75rem 1.7rem;
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn.small {
@@ -1492,6 +1490,7 @@ nav.open .links {
   .header-question {
     font-size: 1rem;
   }
+
   .container {
     padding: 0 2rem;
   }
