@@ -9,10 +9,16 @@
     <title>Leonardo Riascos | Portafolio</title>
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style-switcher.css" />
+
     <!--==================== ICONS ====================-->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
     />
   </head>
 
@@ -42,7 +48,28 @@
       <nav>
         <div class="container">
           <div class="logo">
-            <img src="./img/logo.png" alt="" />
+            <svg
+              height="200px"
+              width="200px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 210 210"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M0,105C0,47.103,47.103,0,105,0c23.383,0,45.515,7.523,64.004,21.756l-24.4,31.696C133.172,44.652,119.477,40,105,40 c-35.841,0-65,29.159-65,65s29.159,65,65,65c28.867,0,53.398-18.913,61.852-45H105V85h105v20c0,57.897-47.103,105-105,105 S0,162.897,0,105z"
+                ></path>
+              </g>
+            </svg>
           </div>
           <div class="links">
             <ul>
@@ -714,9 +741,42 @@
         Made with ❤️ in Colombia
       </p>
     </footer>
+
+    <!-- ========== SWITCHER ========== -->
+    <div class="style-switcher js-style-switcher">
+      <button
+        type="button"
+        class="style-switcher-toggler js-style-switcher-toggler"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          data-name="Layer 1"
+          viewBox="0 0 24 24"
+          id="setting"
+        >
+          <path
+            d="M19.9 12.66a1 1 0 0 1 0-1.32l1.28-1.44a1 1 0 0 0 .12-1.17l-2-3.46a1 1 0 0 0-1.07-.48l-1.88.38a1 1 0 0 1-1.15-.66l-.61-1.83a1 1 0 0 0-.95-.68h-4a1 1 0 0 0-1 .68l-.56 1.83a1 1 0 0 1-1.15.66L5 4.79a1 1 0 0 0-1 .48L2 8.73a1 1 0 0 0 .1 1.17l1.27 1.44a1 1 0 0 1 0 1.32L2.1 14.1a1 1 0 0 0-.1 1.17l2 3.46a1 1 0 0 0 1.07.48l1.88-.38a1 1 0 0 1 1.15.66l.61 1.83a1 1 0 0 0 1 .68h4a1 1 0 0 0 .95-.68l.61-1.83a1 1 0 0 1 1.15-.66l1.88.38a1 1 0 0 0 1.07-.48l2-3.46a1 1 0 0 0-.12-1.17ZM18.41 14l.8.9-1.28 2.22-1.18-.24a3 3 0 0 0-3.45 2L12.92 20h-2.56L10 18.86a3 3 0 0 0-3.45-2l-1.18.24-1.3-2.21.8-.9a3 3 0 0 0 0-4l-.8-.9 1.28-2.2 1.18.24a3 3 0 0 0 3.45-2L10.36 4h2.56l.38 1.14a3 3 0 0 0 3.45 2l1.18-.24 1.28 2.22-.8.9a3 3 0 0 0 0 3.98Zm-6.77-6a4 4 0 1 0 4 4 4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2Z"
+          ></path>
+        </svg>
+      </button>
+      <div class="style-switcher-main">
+        <p>Color de fondo</p>
+        <div class="theme-color">
+          <input
+            type="range"
+            min="0"
+            max="360"
+            class="hue-slider js-hue-slider"
+          />
+          <div class="hue">Hue: <span class="js-hue"></span></div>
+        </div>
+      </div>
+    </div>
+
     <!--==================== JS ====================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="js/style-switcher.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
