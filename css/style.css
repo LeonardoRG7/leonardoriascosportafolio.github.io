@@ -35,7 +35,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   background-color: var(--light-two);
 }
@@ -603,7 +602,7 @@ nav.open .links {
 
 svg {
   width: 4rem;
-  padding: 0 .4rem;
+  padding: 0 0.4rem;
 }
 
 h4 {
@@ -616,7 +615,6 @@ h4 {
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
-
 
 .about .column-1 {
   position: relative;
@@ -959,6 +957,9 @@ h4 {
   .btn {
     padding: 0.75rem 1.7rem;
     font-size: 0.8rem;
+  }
+
+  .btn-about {
     display: flex;
     align-items: center;
     justify-content: center;
